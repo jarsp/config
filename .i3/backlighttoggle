@@ -1,0 +1,10 @@
+#!/bin/sh -
+
+light=$(xbacklight)
+
+if [ "$light" = "100.000000" ]
+then
+    xbacklight -set 10;
+else
+    xbacklight -set 100;
+fi

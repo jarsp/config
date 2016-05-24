@@ -1,0 +1,15 @@
+Install fzf
+
+Install scrot? Change path of bg picture
+Install ycm, must compile libs again
+Set up neovim properly
+Install feh/fehbg if needed
+https://help.ubuntu.com/community/Custom%20keyboard%20layout%20definitions?action=show&redirect=Howto%3A+Custom+keyboard+layout+definitions
+keysyms in /usr/share/X11/xkb/symbols/us
+gnome terminal profile goes in ~/.gconf/apps/gnome-terminal/profiles
+gtk 2.0 in ~, gtk 3.0 in .config/gtk-3.0/settings.ini
+http://gnome-look.org/content/show.php/Ultra-Flat?content=167473
+http://www.ravefinity.com/p/vivacious-colors-gtk-icon-theme.html
+Have to install the themes first before it works
+http://gnome-look.org/content/show.php/Ubuntu-Touch+%28Unity%2BCinnamon%29?content=168490
+to install themes drag them into the ~/.themes folder

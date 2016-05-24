@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="title_mode" mtime="1457522839" type="string">
+		<stringvalue>replace</stringvalue>
+	</entry>
+	<entry name="title" mtime="1457522841" type="string">
+		<stringvalue>Terminal</stringvalue>
+	</entry>
+	<entry name="scrollbar_position" mtime="1464113375" type="string">
+		<stringvalue>hidden</stringvalue>
+	</entry>
+	<entry name="allow_bold" mtime="1439954796" type="bool" value="true"/>
+	<entry name="font" mtime="1464113375" type="string">
+		<stringvalue>Anonymous Pro 13</stringvalue>
+	</entry>
+	<entry name="use_system_font" mtime="1464113375" type="bool" value="false"/>
+	<entry name="use_theme_colors" mtime="1464113375" type="bool" value="false"/>
+	<entry name="background_type" mtime="1464113375" type="string">
+		<stringvalue>transparent</stringvalue>
+	</entry>
+	<entry name="visible_name" mtime="1464113375" type="string">
+		<stringvalue>Default</stringvalue>
+	</entry>
+	<entry name="foreground_color" mtime="1464113375" type="string">
+		<stringvalue>#2CC6FFFF0000</stringvalue>
+	</entry>
+	<entry name="background_color" mtime="1464113375" type="string">
+		<stringvalue>#000000000000</stringvalue>
+	</entry>
+	<entry name="silent_bell" mtime="1464113375" type="bool" value="true"/>
+	<entry name="default_show_menubar" mtime="1464113375" type="bool" value="false"/>
+	<entry name="bold_color" mtime="1464113375" type="string">
+		<stringvalue>#000000000000</stringvalue>
+	</entry>
+	<entry name="palette" mtime="1464113375" type="string">
+		<stringvalue>#000000000000:#CCCC00000000:#8A8AE2E23434:#C4C4A0A00000:#34346565A4A4:#757550507B7B:#060698209A9A:#D3D3D7D7CFCF:#555557575353:#EFEF29292929:#4E4E9A9A0606:#FCFCE9E94F4F:#72729F9FCFCF:#ADAD7F7FA8A8:#3434E2E2E2E2:#EEEEEEEEECEC</stringvalue>
+	</entry>
+	<entry name="background_darkness" mtime="1464113375" type="float" value="0.88221698999404907"/>
+</gconf>
