@@ -1,0 +1,21 @@
+#!/usr/bin/zsh
+
+if [ "$1" = "-h" ]
+then
+    echo "Usage: $0 [-m SEAGATE_DRIVE]"
+    echo "-m: Mount using the given disk drive."
+    echo "SEAGATE_DRIVE: Seagate disk drive, e.g. /dev/sdb1"
+    exit 1
+fi
+
+if [ "$1" = "-m" ]
+then
+    sudo mount "$2" /media/jarsp/Seagate
+    if [ "$?" != "0" ]
+    then
+        echo "Failed to mount."
+        exit 1
+    fi
+fi
+
+rsync -av --delete /media/jarsp/Data/ /media/jarsp/Seagate/Backup/ | tee `date +/media/jarsp/Seagate/Logs/backup_%H%M%S_%d%m%y`

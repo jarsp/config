@@ -1,0 +1,33 @@
+#!/usr/bin/zsh
+
+PACKAGES=("tikz" "tikz-cd" "amsmath")
+
+if [ "$#" != "2" ]
+then
+    echo "Usage: $0 FILENAME OUTPUT"
+    echo "FILENAME: Name of file with tikz code"
+    echo "OUTPUT: Output file"
+    exit 1
+fi
+
+tmp="$1.__tmp"
+ttmp="/tmp/$tmp"
+ttex="/tmp/$tmp.tex"
+rm -f "$ttex"
+echo '\\documentclass{standalone}' >> "$ttex"
+
+for p in "${PACKAGES[@]}"
+do
+    echo "\\\\usepackage{$p}" >> "$ttex"
+done
+
+echo '\\begin{document}' >> "$ttex"
+cat "$1" >> "$ttex"
+echo '\\end{document}' >> "$ttex"
+
+cd /tmp
+pdflatex "$ttex"
+cd -
+convert -density 300 -quality 100 -resize 50% -sharpen 1.0 "$ttmp.pdf" "$2"
+
+rm -f "$ttmp.aux" "$ttmp.log" "$ttmp.pdf" "$ttmp.tex"

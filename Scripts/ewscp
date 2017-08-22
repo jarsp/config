@@ -1,0 +1,11 @@
+#!/usr/bin/zsh -
+
+EWS="insertewshere"
+
+if [ "$1" = "-get" ]
+then
+    scp -r "$EWS:$2" "$3"
+elif [ "$1" = "-push" ]
+then
+    scp -r "$2" "$EWS:$3"
+fi
